@@ -1,0 +1,15 @@
+py -3.7 -m venv .venv
+
+pip install -r requirements.txt
+
+django-admin startproject pizza_place .
+
+py manage.py migrate 
+
+py manage.py runserver 
+
+go to the debug with manage.py selected, then select create json file, choose django and now there's a debugger.
+
+py manage.py startapp MainApp
+
+password:1234
