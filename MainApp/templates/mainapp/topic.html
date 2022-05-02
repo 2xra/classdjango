@@ -17,10 +17,12 @@
 
         <p>{{ e.date_added }}
         </p>
+        <p><a href="{% url 'MainApp:edit_entry' e.id %}">Edit entry</a></p>
     </li>
     {% empty %}
     <li>There are not any entries. </li>
     {% endfor %}
 </ul>
 
+<p><a href="{% url 'MainApp:new_entry' topic.id %}">Add new entry</a></p>
 {% endblock content %}
