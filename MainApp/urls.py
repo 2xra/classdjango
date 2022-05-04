@@ -1,4 +1,3 @@
-from pydoc_data.topics import topics
 from django.urls import path
 
 from . import views
