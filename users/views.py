@@ -19,4 +19,4 @@ def register(request):
 
     context={'form':form}
     
-    return render(request, 'MainApp/index.html', context)
+    return render(request, 'registration/register.html', context)
